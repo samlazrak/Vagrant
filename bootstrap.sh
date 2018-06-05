@@ -28,3 +28,9 @@ echo -n ${MYSQL_ROOT_PASSWORD} > /root/.provisioning/mysql_root_password
 
 sed -i "s/^bind-address.*/bind-address = 0.0.0.0/g" /etc/mysql/my.cnf
 service mysql restart
+
+# Python
+sudo apt install python-minimal # Installs Python 2
+sudo apt-get install python3-setuptools
+sudo easy_install3 pip       # Python3 pip
+sudo pip install virtualenv  # Py3
